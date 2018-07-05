@@ -1,0 +1,21 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(image_path('home_wallpaper.jpg'));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+.logo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 9vw;
+    color: rgba(255, 255, 255, 0.76);
+    // text-shadow: 2px 2px dimgrey;
+    margin: 0;
+    padding: 0;
+}

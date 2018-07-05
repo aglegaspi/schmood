@@ -1,0 +1,9 @@
+<h1 class="logo">schmood</h1>
+
+<!-- each corresponding path takes in a parameter accoring to mood which in turn will display the set mood -->
+<%= link_to 'Sign in with Spotify - Happy', spotify_login_path(user_mood: 'happy')  %>
+<%= link_to 'Sign in with Spotify - Sad', spotify_login_path(user_mood: 'sad')  %>
+<%= link_to 'Sign in with Spotify - Angry', spotify_login_path(user_mood: 'angry') %>
+<%= link_to 'Sign in with Spotify - Moody', spotify_login_path(user_mood: 'moody') %>
+
+<h1>Curated by Alex G. Legaspi</h1>
