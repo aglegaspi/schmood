@@ -9,9 +9,8 @@ Rails.application.routes.draw do
 
   get '/user/happy', to: 'users#happy'
   get '/user/sad', to: 'users#sad'
+  get '/user/angry', to: 'users#sad'
 
   resources :users
-
-  resources :sessions, only: [:new, :create]
 
 end

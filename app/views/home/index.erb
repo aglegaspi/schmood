@@ -1,9 +1,27 @@
-<h1 class="logo">schmood</h1>
+
+<h1 class="logo shine">schmood</h1>
+
 
 <!-- each corresponding path takes in a parameter accoring to mood which in turn will display the set mood -->
-<%= link_to 'Sign in with Spotify - Happy', spotify_login_path(user_mood: 'happy')  %>
-<%= link_to 'Sign in with Spotify - Sad', spotify_login_path(user_mood: 'sad')  %>
-<%= link_to 'Sign in with Spotify - Angry', spotify_login_path(user_mood: 'angry') %>
-<%= link_to 'Sign in with Spotify - Moody', spotify_login_path(user_mood: 'moody') %>
 
-<h1>Curated by Alex G. Legaspi</h1>
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4 spacing justify-content-center"><%= link_to image_tag('happy_still.jpg'), spotify_login_path(user_mood: 'happy'), class: 'happy justify-content-center' %></div>
+      <div class="col-sm-4 spacing justify-content-center"><%= link_to image_tag('voguing_still.jpg'), spotify_login_path(user_mood: 'voguing'), class: 'voguing justify-content-center' %></div>
+      <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4 spacing justify-content-center"><%= link_to image_tag('issavibe_still.jpg'), spotify_login_path(user_mood: 'issavibe'), class: 'mood issavibe' %></div>
+      <div class="col-sm-4 spacing justify-content-center"><%= link_to image_tag('moody_still.jpg'), spotify_login_path(user_mood: 'moody'), class: 'mood moody' %></div>
+      <div class="col-sm-2"></div>
+    </div>    
+</div>
+
+
+
+<footer>
+<h6>Curated by Alex G. Legaspi</h6>
+</footer>
