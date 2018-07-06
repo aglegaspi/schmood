@@ -18,54 +18,24 @@
     font-family: Arial, Helvetica, sans-serif;
     background: url(image_path('home_wallpaper.jpg'));
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     background-attachment: fixed;
 }
 
-
+.top {
+    z-index: 100;
+}
 
 .logo {
+    position: relative;
     text-align: center;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Monoton', cursive;
     font-size: 13vw;
     color: rgba(255, 255, 255, 0.76);
     // text-shadow: 2px 2px dimgrey;
-    margin: auto;
     padding: 0;
 }
 
-$duration: 5s;
-$text-color: rgba(255, 255, 255, 0.3);
-$bgr-color: rgba(51, 51, 51, 0.397);
-
-.shine {
-	background: #fd640880 -webkit-gradient(linear, left top, right top, from(#ff5e00), to(#ff6309), color-stop(0.5, #fff)) 0 0 no-repeat;
-	-webkit-background-size: 150px;
-	color: $text-color;
-	-webkit-background-clip: text;
-	-webkit-animation-name: shine;
-	-webkit-animation-duration: $duration;
-	-webkit-animation-iteration-count: infinite;
-	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
-}
-
-
-
-@-webkit-keyframes shine {
-	0%, 10% {
-		background-position: -1000px;
-	}
-	20% {
-		background-position: top left;
-	}
-	90% {
-		background-position: top right;
-	}
-	100% {
-		background-position: 1000px;
-	}
-}
-
-  
   
 .spacing {
     position: relative;
@@ -106,3 +76,24 @@ $bgr-color: rgba(51, 51, 51, 0.397);
     margin-bottom: -15px;
 }
 
+
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100%; 
+    height: 100%; 
+    background-image: url(""); 
+    background-repeat: repeat; 
+    background-size: 100% 100%;
+    background-position: 50% 50%; } 
+
+
+@media (max-width: 768px) {
+    .col-xs-12.text-right, .col-xs-12.text-left {
+            text-align: center;
+            margin: auto;
+     } 
+  }
