@@ -12,38 +12,111 @@
  *
  *= require bootstrap/scss/bootstrap
  *= require_self
+ *= require_tree .
  */
 
  body {
     font-family: Arial, Helvetica, sans-serif;
-    background: url(image_path('home_wallpaper.jpg'));
+    background-color: white;
+    // background: url(image_path('home_wallpaper.jpg'));
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
 }
 
-.top {
-    z-index: 100;
-}
-
-.logo {
-    position: relative;
-    text-align: center;
-    font-family: 'Monoton', cursive;
-    font-size: 13vw;
-    color: rgba(255, 255, 255, 0.76);
-    // text-shadow: 2px 2px dimgrey;
-    padding: 0;
-}
-
+.outer-container {
+    width: 100%;
+    min-height: 1400px;
+  }
   
-.spacing {
+  .banner {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
     position: relative;
-    padding: 20px;
-    margin: 10px;
-    min-width: 320px;
+    background-color: rgb(255, 255, 255);
+    transform-style: preserve-3d;
+    transform: translatez(0);
+    
+    &__image, &__caption {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    &__image {
+      height: 800px;
+      z-index: 10;
+      overflow: hidden;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.8;
+      transform: translatez(0);
+    }
+    
+    &__caption {
+      height: auto;
+      z-index: 20;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: -10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      
+    }
+    
+  }
+
+h1 {
+	display: inline;
+	position: relative;
+    font-family: 'Monoton', cursive;
+    font-size: 15vw;
+	letter-spacing: -5px;
+	color: rgba(0, 0, 255, 0.911); 
 }
 
+h1:before {
+	content: "schmood";
+    position: absolute; left: 0px; top: -30px;
+    font-family: 'Monoton', cursive;
+    font-size: 15vw;
+	color: rgba(255, 0, 34, 0.822);   
+}
+
+h1:after {
+	content: "schmood";
+    position: absolute; left: 0px; top: -0px;
+    font-family: 'Monoton', cursive;
+    font-size: 15vw;
+	color: rgba(255, 230, 0, 0.658);   
+}
+
+.happy_section {
+    padding: 50px;
+    height: 800px;
+}
+
+.sad_section {
+    padding: 50px;
+    height: 800px;
+    
+}
+
+.moody_section {
+    padding: 50px;
+    height: 800px;
+    
+}
+
+color_picker {
+    color: rgb(255, 0, 51);
+}
 
 .happy:hover {
     position: relative;
@@ -77,18 +150,6 @@
 }
 
 
-/* ---- particles.js container ---- */ 
-#particles-js{ 
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -100;
-    width: 100%; 
-    height: 100%; 
-    background-image: url(""); 
-    background-repeat: repeat; 
-    background-size: 100% 100%;
-    background-position: 50% 50%; } 
 
 
 @media (max-width: 768px) {

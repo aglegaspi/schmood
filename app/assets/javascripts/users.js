@@ -2,3 +2,12 @@
 // All this logic will automatically be available in application.js.
 
 
+$(document).ready(function() {
+
+    var s = skrollr.init({
+        smoothScrolling: false,
+        forceHeight: false
+      });
+
+});
+
