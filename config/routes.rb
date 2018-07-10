@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get '/user/happy', to: 'users#happy'
   get '/user/sad', to: 'users#sad'
-  get '/user/angry', to: 'users#sad'
+  get '/user/moody', to: 'users#moody'
 
   resources :users
 

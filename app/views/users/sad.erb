@@ -1,3 +1,12 @@
+<div class="schmooder">
+<p class="mood_header">sad.</p>
+</div>
+<div class="schmooder">
+<iframe src="https://open.spotify.com/embed/user/<%= @spotify_user.id %>/playlist/<%= @playlist.id %>" max-width="500" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+<div class="schmooder">
+<p><%= link_to "back to schmoods", root_path, class: 'footer_text' %></p>
+</div>
 
 
 
