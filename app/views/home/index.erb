@@ -5,32 +5,30 @@
     <div class="banner__image" data-0="transform: translateY(0px);" data-top-bottom="transform: translateY(300px);"></div>
         <div class="banner__caption">
         <h1 class="logo">schmood</h1>
-        <p>
-            PLAYLISTS ACCORDING TO YA SCHMOOD!
+        <p class="sub_header">
+            instructions: click on image to generate a spotify playlist according to the mood.
         </p>
         </div>
     </div>
 
-  <div data-0="background-color:rgb(255,255,255);" data-500="background-color:rgb(255, 230, 0);" class="happy_section">
+  <div data-0="background-color:rgb(255,255,255);" data-500="background-color:rgb(255, 230, 0);" class="happy_section schmooder">
+    <p class="buzz_text">happy.</p>
     <%= link_to image_tag('happy_still.jpg'), spotify_login_path(user_mood: 'happy'), class: 'mood happy' %>
   </div>
 
-  <div data-center="background-color:rgb(0, 0, 255);" data-500="background-color:rgb(255, 230, 0);" class="sad_section">
-      <div class="col-sm-4 spacing justify-content-center"><%= link_to image_tag('issavibe_still.jpg'), spotify_login_path(user_mood: 'issavibe'), class: 'mood issavibe' %></div>
+  <div data-center="background-color:rgb(0, 0, 255);" data-500="background-color:rgb(255, 230, 0);" class="sad_section  schmooder">
+    <p class="buzz_text">sad.</p>
+    <%= link_to image_tag('issavibe_still.jpg'), spotify_login_path(user_mood: 'issavibe'), class: 'mood issavibe' %>
   </div>
 
-  <div data-center="background-color:rgb(255, 0, 51);" data-500-bottom="background-color:rgb(0, 0, 255);" class="moody_section">
-    <div class="col-sm-4 spacing justify-content-center"><%= link_to image_tag('moody_still.jpg'), spotify_login_path(user_mood: 'moody'), class: 'mood moody' %></div>
+  <div data-center="background-color:rgb(255, 0, 51);" data-700="background-color:rgb(0, 0, 255);" class="moody_section  schmooder">
+    <p class="buzz_text">moody.</p>
+    <%= link_to image_tag('moody_still.jpg'), spotify_login_path(user_mood: 'moody'), class: 'mood moody' %>
+  </div>
+
+    <div data-bottom="background-color:rgb(255, 255, 255);" data-300-bottom="background-color:rgb(255, 0, 51);" class="footer_section  schmooder">
+    Curated by Alex G. Legaspi
   </div>
 
 </div>
 
-
-<!-- particles.js container 
-<div id="particles-js"></div> 
-
-<! particles.js lib - https://github.com/VincentGarreau/particles.js >
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
-<!> stats.js lib > <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-
--->

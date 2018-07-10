@@ -18,10 +18,6 @@
  body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    // background: url(image_path('home_wallpaper.jpg'));
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
 }
 
 .outer-container {
@@ -75,26 +71,35 @@
 h1 {
 	display: inline;
 	position: relative;
-    font-family: 'Monoton', cursive;
+    font-family: 'Shrikhand', cursive;
     font-size: 15vw;
-	letter-spacing: -5px;
-	color: rgba(0, 0, 255, 0.911); 
+    letter-spacing: -5px;
+    margin-top: 50px;
+	color: rgba(0, 0, 255, 0.678); 
 }
 
 h1:before {
 	content: "schmood";
     position: absolute; left: 0px; top: -30px;
-    font-family: 'Monoton', cursive;
-    font-size: 15vw;
-	color: rgba(255, 0, 34, 0.822);   
+	color: rgba(255, 230, 0, 0.658);      
 }
 
 h1:after {
 	content: "schmood";
     position: absolute; left: 0px; top: -0px;
-    font-family: 'Monoton', cursive;
+    color: rgba(255, 0, 60, 0.521); 
+}
+
+.sub_header {
+    color: black;
+    font-family: monospace;
+}
+
+.buzz_text {
+    color: white;
+    font-family: monospace;
     font-size: 15vw;
-	color: rgba(255, 230, 0, 0.658);   
+    margin-top: 10px;
 }
 
 .happy_section {
@@ -114,39 +119,45 @@ h1:after {
     
 }
 
+.footer_section {
+    padding: 50px;
+    height: 400px;
+    
+}
+
 color_picker {
     color: rgb(255, 0, 51);
 }
 
-.happy:hover {
-    position: relative;
-    content: url('happy_giphy.gif');
-    margin-top: 0px;
-    margin-bottom: -15px;
+.schmooder {
+    margin: 0 auto;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.voguing:hover {
-    position: relative;
-    content: url('voguing_giphy.gif');
+.happy:hover {
+    
+    content: url('happy_giphy.gif');
     margin-top: 0px;
-    margin-bottom: -15px;
+    margin-bottom: 0px;
+    
 }
 
 
 .issavibe:hover {
-    position: relative;
+    
     content: url('issavibe_giphy.gif');
     margin-top: 0px;
-    margin-bottom: -15px;
+    margin-bottom: 0px;
 }
 
 
 .moody:hover {
-    position: relative;
+    
     content: url('moody_giphy.gif');
     margin-top: 0px;
-    margin-bottom: -15px;
+    margin-bottom: 0px;
 }
 
 

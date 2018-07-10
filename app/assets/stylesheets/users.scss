@@ -3,12 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-   
-    
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  
+    background-color: rgb(117, 117, 117);
+}
+
+.mood_header {
+    font-family: monospace;
+    font-size: 15vw;
+
+}
+
+.footer_text {
+    font-family: monospace;
+    margin-top: 20px;
+    padding: 20px;
+    text-decoration: none;
+}

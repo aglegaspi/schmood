@@ -4,7 +4,7 @@
 
 $(document).ready(function() {
 
-    $('h1').css({top: -30, opacity: 0}).
-    animate({top: 20, opacity: 1}, 'slow');
+    $('h1').css({top: -50, opacity: 0}).
+    animate({top: 40, opacity: 1}, 'slow');
 
 });
