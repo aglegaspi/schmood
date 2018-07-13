@@ -12,15 +12,15 @@ $(document).ready(function() {
 
     // this will change the background color corresponding to the mood selected
       if ($("#happyaf").length){  
-        $(document.body).css({"background-color" : "yellow"});
+        $(document.body).css({"background-color" : "rgb(255, 213, 0)"});
       }
 
       if ($("#sadaf").length){  
-        $(document.body).css({"background-color" : "blue"});
+        $(document.body).css({"background-color" : "rgb(51, 0, 255)"});
       }
 
       if ($("#moodyaf").length){  
-        $(document.body).css({"background-color" : "red"});
+        $(document.body).css({"background-color" : "rgb(255, 0, 60)"});
       }
 ß
 

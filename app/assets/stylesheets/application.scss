@@ -116,7 +116,6 @@ h1:after {
 .moody_section {
     padding: 50px;
     height: 800px;
-    
 }
 
 .footer_section {
@@ -132,12 +131,11 @@ color_picker {
 .schmooder {
     margin: 0 auto;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .happy:hover {
-    
     content: url('happy_giphy.gif');
     margin-top: 0px;
     margin-bottom: 0px;
@@ -145,22 +143,18 @@ color_picker {
 }
 
 
-.issavibe:hover {
-    
-    content: url('issavibe_giphy.gif');
+.sad:hover {
+    content: url('sad_giphy.gif');
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 
 .moody:hover {
-    
     content: url('moody_giphy.gif');
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
-
 
 
 @media (max-width: 768px) {
